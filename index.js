@@ -15,3 +15,5 @@ app.use(router)
 app.listen(8080,()=>{
     console.log('start 8080')
 })
+
+default.exports = app

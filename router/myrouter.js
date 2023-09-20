@@ -24,7 +24,7 @@ router.post('/login',(req,res)=>{
         req.session.username = username
         req.session.password = password
         req.session.login = true
-        req.session.cookie.maxAge = timeExpires
+        // req.session.cookie.maxAge = timeExpires
         res.redirect('/admin')
     }else{
         res.redirect('/')
